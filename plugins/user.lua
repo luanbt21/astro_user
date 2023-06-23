@@ -5,24 +5,13 @@ return {
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
-    config = function()
-      require("lsp_signature").setup()
-    end,
+    config = function() require("lsp_signature").setup() end,
   },
-  {
-    "simrat39/rust-tools.nvim",
-    {
-      "williamboman/mason-lspconfig.nvim",
-      opts = {
-        ensure_installed = { "rust_analyzer" },
-      },
-    },
-  },
+  { "mg979/vim-visual-multi", lazy = false },
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    config = function()
-      require("catppuccin").setup {}
-    end,
+    config = function() require("catppuccin").setup {} end,
   },
+  { "Pocco81/auto-save.nvim", lazy = false },
 }
