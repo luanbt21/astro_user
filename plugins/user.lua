@@ -13,6 +13,6 @@ return {
     name = "catppuccin",
     config = function() require("catppuccin").setup {} end,
   },
-  { "Pocco81/auto-save.nvim", lazy = false },
+  -- { "Pocco81/auto-save.nvim", lazy = false },
   { "xiyaowong/transparent.nvim", lazy = false },
 }
